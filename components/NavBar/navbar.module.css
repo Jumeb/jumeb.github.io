@@ -1,0 +1,61 @@
+.navbar {
+    @apply sticky top-0 z-50 bg-transparent w-full flex flex-row justify-between items-center p-4;
+    @apply md:px-8;
+    @apply xl:px-16;
+}
+
+.navbar > h4 {
+    @apply text-sm font-normal;
+}
+
+.navlinks {
+    @apply hidden flex-row justify-center items-center gap-8;
+    @apply sm:flex;
+    @apply xl:gap-10;
+}
+
+.navlinksMdContainer {
+    @apply h-[calc(100vh-72px)] flex fixed top-[72x] bottom-0 left-0 w-full bg-gray-dark/10 backdrop-blur duration-500 ease-in-out;
+    @apply sm:hidden;
+}
+
+.inactiveMd {
+    @apply translate-x-full;
+}
+
+.activeMd {
+    @apply translate-x-0;
+}
+
+.navlinksMd {
+    @apply w-[80%] bg-white ml-auto flex flex-col p-4 justify-between items-start;
+}
+
+.containerLinks {
+    @apply flex flex-col gap-6 w-full;
+}
+
+.navlink {
+    @apply font-semibold text-base text-primary-black;
+    @apply sm:text-white;
+    @apply lg:text-primary-black;
+}
+
+.navToggler {
+    @apply flex h-10 bg-primary aspect-square overflow-clip rounded-md shadow justify-center items-center;
+    @apply sm:hidden;
+}
+
+.navToggle {
+    @apply relative h-0.5 w-[55%] bg-white duration-500 ease-in-out;
+    @apply before:absolute before:content-[""] before:h-0.5 before:w-[110%] before:bg-white;
+    @apply before:translate-y-1.5 before:duration-500 before:ease-in-out before:origin-center;
+    @apply after:absolute after:content-[""] after:h-0.5 after:w-[110%] after:bg-white;
+    @apply after:-translate-y-1.5 after:duration-500 after:ease-in-out after:origin-center;
+}
+
+.activeToggle {
+    @apply bg-transparent translate-x-6;
+    @apply before:-rotate-45 before:translate-y-0 before:-translate-x-6;
+    @apply after:rotate-45 after:-translate-y-0 after:-translate-x-6;
+}

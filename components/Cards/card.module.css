@@ -1,0 +1,82 @@
+/* Services Card styles */
+
+.serviceCard {
+    @apply flex flex-col justify-center items-center h-96 rounded shadow-xl shadow-primary-light/20 gap-6 p-6 duration-500 ease-in-out bg-white;
+    @apply lg:w-80;
+}
+
+.serviceCard > h6 {
+    @apply text-lg text-primary-black font-bold;
+}
+
+.serviceCard > p {
+    @apply text-sm text-gray font-normal text-center text-balance;
+}
+
+
+/* Work card styles */
+
+.workCard {
+    @apply flex flex-col gap-1 bg-white w-[80%];
+    @apply md:w-72;
+    @apply xl:w-80;
+}
+
+.workCard > h5 {
+    @apply text-primary-black text-lg font-bold mt-2;
+}
+
+.workCard > p {
+    @apply text-gray text-sm font-semibold -mt-1;
+}
+
+.workImage {
+    @apply relative w-full h-40;
+    @apply md:h-56;
+    @apply xl:h-56;
+}
+
+.workImage > img {
+    @apply w-full h-full object-center object-cover;
+}
+
+.workImageBar {
+    @apply absolute top-2 left-0 w-full flex flex-row justify-between items-center px-4;
+}
+
+.workBadge {
+    @apply bg-primary-light p-1.5;
+}
+
+.workBadge > p {
+    @apply text-xs font-serif text-primary-dark
+}
+
+.workLink {
+    @apply w-5 h-5 fill-primary;
+}
+
+
+/* Testimonial card styles */
+
+.testyCard {
+    @apply w-[90%] flex flex-col gap-2 justify-center items-center border-x-4 border-x-primary px-4 py-8 shadow-xl shadow-primary-light/20;
+    @apply md:w-1/2;
+    @apply lg:w-[40%];
+}
+
+.testyCard > h5 {
+    @apply text-primary-black font-bold text-lg;
+}
+
+.testyCard > p {
+    @apply text-gray text-sm font-normal text-center text-balance;
+}
+
+.testyCardImage {
+    @apply h-14 aspect-square rounded-full border-2 border-primary overflow-clip mb-2;
+}
+
+.testyCardImage > img {
+    @apply w-full h-full object-center object-cover
+}

@@ -1,0 +1,66 @@
+.container {
+    @apply flex flex-col bg-white px-0 py-6 gap-10 w-full justify-center items-center;
+    @apply lg:py-8 lg:gap-14;
+    @apply xl:px-16 xl:py-16;
+}
+
+.containerTop {
+    @apply text-center;
+}
+
+.containerTop > h3 {
+    @apply text-center font-bold text-balance px-4 text-primary-black text-2xl;
+    @apply lg:text-3xl lg:px-8;
+}
+
+.containerBottom {
+    @apply flex flex-col justify-center items-center w-full gap-10;
+    @apply xl:gap-8;
+}
+
+.testyContainer {
+    @apply relative grid grid-cols-1 w-full px-6 overflow-x-clip;
+}
+
+
+.carouselContent {
+    @apply flex justify-center duration-700 ease-in-out w-full;
+}
+
+.nextContent {
+    @apply absolute top-0 translate-x-full opacity-100 scale-90;
+}
+
+.disappear {
+    @apply translate-x-[100%];
+}
+
+.currentContent {
+    @apply relative z-30;
+}
+
+.prevContent {
+    @apply absolute top-0 -translate-x-full opacity-100 scale-90;
+}
+
+.carouselControls {
+    @apply flex flex-row justify-center items-center gap-3;
+}
+
+.carouselIndicate {
+    @apply w-3 cursor-pointer aspect-square rounded-full opacity-25 bg-primary;
+}
+
+.indicateActive {
+    @apply opacity-100;
+}
+
+
+.lastContainer {
+    @apply flex flex-row w-full py-6 mt-12 justify-between items-center px-4;
+}
+
+.lastContainer > h2 {
+    @apply text-xl font-bold text-primary-black;
+    @apply lg:text-3xl
+}

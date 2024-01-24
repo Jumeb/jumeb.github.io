@@ -1,0 +1,75 @@
+.button {
+    @apply w-full py-2 px-4;
+}
+
+.button > span {
+    @apply text-base font-normal;
+}
+
+.disabled {
+    @apply !bg-gray;
+}
+
+.disabled > p {
+    @apply !text-primary-dark;
+}
+
+/* Theme button styles */
+
+.themeButton {
+    @apply relative h-9 z-10  max-w-20  cursor-pointer rounded-3xl flex flex-row justify-center items-center gap-6 shadow px-2.5 duration-500 ease-in-out;
+}
+
+.active {
+    @apply bg-white;
+}
+
+.inactive {
+    @apply bg-primary-black;
+}
+
+
+.themeSwitch {
+    @apply absolute h-7 -z-10 aspect-square rounded-full duration-300 ease-in-out;
+}
+
+.activeSwitch {
+    @apply -translate-x-5 bg-primary-black;
+}
+
+.inactiveSwitch {
+    @apply translate-x-5 bg-white;
+}
+
+
+.themeIcon {
+    @apply fill-primary-black h-4 w-4;
+}
+
+/* Social button */
+
+.socialButton {
+    @apply outline-none w-8 bg-white shadow-md aspect-square rounded-full border-2 border-primary flex items-center justify-center text-2xl;
+    @apply lg:w-9;
+};
+
+
+/* Top button styles */
+
+.topButton {
+    @apply fixed bottom-0 cursor-pointer z-50 right-4 h-10 aspect-square flex justify-center items-center bg-white shadow-xl shadow-primary-light/20 duration-500 ease-in-out;
+    @apply lg:right-8;
+    @apply lg:right-16;
+}
+
+.showTop {
+    @apply -translate-y-6;
+}
+
+.hideTop {
+    @apply translate-y-20;
+}
+
+.topIcon {
+    @apply fill-primary h-5 w-5;
+}

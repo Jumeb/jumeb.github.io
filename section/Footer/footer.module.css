@@ -1,0 +1,29 @@
+.footer {
+    @apply bg-primary w-full flex flex-col justify-center items-center gap-8 py-9;
+    @apply xl:gap-20;
+}
+
+.footer > p {
+    @apply text-white font-normal text-sm;
+}
+
+.footerContent {
+    @apply flex flex-col justify-around items-center w-full gap-4;
+    @apply sm:flex-row;
+}
+
+.footerContent > h2 {
+    @apply text-white font-bold text-sm;
+}
+
+.footerlinks {
+    @apply flex flex-row justify-center items-center gap-4;
+}
+
+.footerlink {
+    @apply text-white text-base font-normal;
+}
+
+.footerIcon {
+    @apply h-5 w-5 fill-white;
+}
