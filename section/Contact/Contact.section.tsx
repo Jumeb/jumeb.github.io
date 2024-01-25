@@ -4,6 +4,7 @@ import styles from "./contact.module.css";
 import Input from "@/components/Input/input.component";
 import Textarea from "@/components/Input/Textarea.component";
 import Button from "@/components/Buttons/Button.component";
+import { Assets } from "@/utils/static/assets";
 
 const Contact: React.FC = () => {
   return (
@@ -35,6 +36,9 @@ const Contact: React.FC = () => {
           <Button text="Send message" disabled />
         </div>
       </div>
+      {/* <div className="w-auto h-96">
+        <img src={Assets.icon} alt="" className="w-full h-full primaryFilter" />
+      </div> */}
     </section>
   );
 };
