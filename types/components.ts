@@ -57,6 +57,12 @@ export interface MyworkCard {
     badges: string[];
 }
 
+export interface TestimonialCard {
+    img: string;
+    name: string;
+    testimonial: string;
+}
+
 
 // Input interfaces 
 

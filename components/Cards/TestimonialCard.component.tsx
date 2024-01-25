@@ -3,18 +3,17 @@ import React from "react";
 
 import styles from "./card.module.css";
 import { Assets } from "@/utils/static/assets";
+import { TestimonialCard } from "@/types/components";
 
-const TestimonialCard: React.FC = () => {
+const TestimonialCard: React.FC<{testimonial: TestimonialCard}> = ({testimonial}) => {
   return (
     <div className={styles.testyCard}>
       <div className={styles.testyCardImage}>
-        <img src={Assets.img2} alt="Person image" loading="lazy" />
+        <img src={testimonial.img} alt={testimonial.name} loading="lazy" />
       </div>
-      <h5>Person Name</h5>
+      <h5>{testimonial.name}</h5>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora,
-        fugiat suscipit. Cumque rerum corrupti vel eum officiis dignissimos hic,
-        molestias id illo at iusto fuga molestiae veritatis, saepe rem quos!
+        {testimonial.testimonial}
       </p>
     </div>
   );

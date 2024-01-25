@@ -4,19 +4,44 @@ import styles from "./testimonial.module.css";
 import TestimonialCard from "@/components/Cards/TestimonialCard.component";
 import Button from "@/components/Buttons/Button.component";
 import { useRouter } from "next/navigation";
+import { Assets } from "@/utils/static/assets";
+import { TestimonialCard as Testimonials } from "@/types/components";
 
 const Testimonial: React.FC = () => {
   const [active, setActive] = useState<number>(0);
   const router = useRouter();
+
+  const testimonials: Testimonials[] = [
+    {
+      img: Assets.test1,
+      name: "Nkoa Christophe",
+      testimonial:
+        "Working with Jume on the Mengu Medicals website is effortless, albeit costly. His swift web development skills ensure minimal design queries, allowing for a relaxed experience and prompt results. Jume's speed sets him apart.",
+    },
+    {
+      img: Assets.test2,
+      name: "Issabel Ntoweh",
+      testimonial:
+        "I am fortunate to work with Jume, as he demonstrates a deep understanding of the challenges inherent in UI/UX design and consistently exhibits meticulous attention to detail. However, I find his quietness during meetings to be somewhat off-putting.",
+    },
+    {
+      img: Assets.test3,
+      name: "Mafany Myles",
+      testimonial:
+        "I am privileged working with Jume, it seems he understands the pain in the process of UI/UX design, he pays close attention to the design in great detail. I don't like him because he is too quite in meetings.",
+    },
+  ];
+
   useEffect(() => {
     let timeInterval = setTimeout(() => {
-      if (active < 4) return setActive(active + 1);
+      if (active < testimonials.length - 1) return setActive(active + 1);
       return setActive(0);
     }, 5000);
 
     return () => {
       clearTimeout(timeInterval);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [active]);
 
   return (
@@ -29,23 +54,21 @@ const Testimonial: React.FC = () => {
       </div>
       <div className={styles.containerBottom}>
         <div className={styles.testyContainer}>
-          {Array(5)
-            .fill(0)
-            .map((_, index: number) => (
-              <div
-                key={index}
-                className={`${styles.carouselContent} ${
-                  index < active ? styles.prevContent : ""
-                } ${index === active ? styles.currentContent : ""} ${
-                  index > active ? styles.nextContent : ""
-                } ${index > active + 1 ? styles.disappear : ""}`}
-              >
-                <TestimonialCard />
-              </div>
-            ))}
+          {testimonials.map((testimonial, index: number) => (
+            <div
+              key={index}
+              className={`${styles.carouselContent} ${
+                index < active ? styles.prevContent : ""
+              } ${index === active ? styles.currentContent : ""} ${
+                index > active ? styles.nextContent : ""
+              } ${index > active + 1 ? styles.disappear : ""}`}
+            >
+              <TestimonialCard testimonial={testimonial} />
+            </div>
+          ))}
         </div>
         <div className={styles.carouselControls}>
-          {Array(5)
+          {Array(testimonials.length)
             .fill(0)
             .map((_, index: number) => (
               <div

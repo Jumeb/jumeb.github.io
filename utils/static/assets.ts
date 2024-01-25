@@ -11,6 +11,9 @@ export const Assets = {
     mengu: "./images/mengu.png",
     ntopor: "./images/ntopor.png",
     karla: "./images/karla.jpg",
+    test1: "./images/test1.jpg",
+    test2: "./images/test2.jpg",
+    test3: "./images/test3.jpg",
     portfolio: "./images/portfolio.png",
     cv: "./images/cv.pdf",
 }
