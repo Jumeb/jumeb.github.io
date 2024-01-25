@@ -10,10 +10,11 @@ const TopButton: React.FC<TopButton> = ({ show }) => {
     onClick={() => window.scroll(0, 0)}
       className={[
         styles.topButton,
-        show ? styles.showTop : styles.hideTop,
+        show ? styles.showTop : styles.hideTop, "dark:bg-primary-black dark:shadow-transparent"
       ].join(" ")}
     >
-      <ArrowIcon className={styles.topIcon} />
+      <ArrowIcon 
+      className={[styles.topIcon, "dark:fill-white"].join(" ")} />
     </div>
   );
 };

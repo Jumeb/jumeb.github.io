@@ -5,4 +5,12 @@ export const Assets = {
     img4: "/images/img4.jpg",
     img5: "/images/img5.jpg",
     img6: "/images/img6.jpg",
+    img7: "/images/img7.jpg",
+    flavours: "/images/flavours.png",
+    gasvisor: "/images/gasvisor.png",
+    mengu: "/images/mengu.png",
+    ntopor: "/images/ntopor.png",
+    karla: "/images/karla.jpg",
+    portfolio: "/images/portfolio.png",
+    cv: "/images/cv.pdf",
 }

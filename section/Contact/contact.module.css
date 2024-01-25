@@ -1,0 +1,29 @@
+.container {
+    @apply flex flex-col bg-white px-0 py-6 gap-10 w-full justify-center items-center;
+    @apply lg:py-8 lg:gap-14;
+    @apply xl:px-16 xl:py-16;
+}
+
+.containerTop {
+    @apply text-center;
+}
+
+.containerTop > h3 {
+    @apply text-center font-bold text-balance px-4 text-primary-black text-2xl w-full;
+    @apply lg:text-3xl lg:px-8;
+}
+
+.containerBottom {
+    @apply flex flex-col gap-4 w-full justify-center items-center px-4;
+    @apply md:px-8;
+    @apply xl:px-16;
+}
+
+.formGrid {
+    @apply flex flex-row gap-4 w-full;
+    @apply md:w-1/2;
+}
+
+.btn {
+    @apply mt-7;
+}

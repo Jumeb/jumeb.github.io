@@ -9,7 +9,7 @@
 }
 
 .imageContainer {
-    @apply absolute z-20 top-[30%] -translate-x-1/2 left-1/2   flex justify-center items-center h-72 aspect-square rounded-full border-[10px] border-primary overflow-clip bg-white;
+    @apply absolute z-20 top-[30%] -translate-x-1/2 left-1/2   flex justify-center items-center h-72 aspect-square rounded-full border-[10px] border-primary overflow-clip bg-white dark:bg-primary-black;
     @apply lg:translate-x-[30%] lg:top-1/2 lg:-translate-y-1/2 lg:h-[22rem] lg:left-0;
     @apply xl:translate-x-[90%];
 }
@@ -24,12 +24,17 @@
 }
 
 .headerRight {
-    @apply flex relative bg-white h-full justify-center items-center w-full border-b-8 border-b-primary;
+    @apply dark:!bg-primary-black flex relative bg-white  h-full justify-center items-center w-full border-b-8 border-b-primary;
     @apply lg:w-2/3 lg:h-full;
+    @apply dark:bg-primary-black;
 }
 
 .rightContent {
     @apply flex flex-col justify-start items-start gap-4;
+}
+
+.darkBg {
+    @apply dark:bg-primary-black;
 }
 
 .rightContent > h2 {
@@ -38,12 +43,12 @@
 }
 
 .rightContent > p {
-    @apply font-normal text-primary-black text-base pr-5;
+    @apply font-normal text-primary-black dark:text-white text-base pr-5;
     @apply md:text-xl;
 }
 
 .rightButton {
-    @apply mt-2;
+    @apply mt-2 cursor-pointer;
     @apply md:mt-4;
     @apply xl:mt-8;
 }

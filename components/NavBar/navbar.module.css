@@ -15,7 +15,7 @@
 }
 
 .navlinksMdContainer {
-    @apply h-[calc(100vh-72px)] flex fixed top-[72x] bottom-0 left-0 w-full bg-gray-dark/10 backdrop-blur duration-500 ease-in-out;
+    @apply h-[calc(100vh-72px)] z-40 flex fixed top-[72x] bottom-0 left-0 w-full bg-gray-dark/10 backdrop-blur duration-500 ease-in-out;
     @apply sm:hidden;
 }
 
@@ -36,9 +36,9 @@
 }
 
 .navlink {
-    @apply font-semibold text-base text-primary-black;
-    @apply sm:text-white;
-    @apply lg:text-primary-black;
+    @apply font-semibold text-base text-primary-black  dark:text-white;
+    @apply sm:text-white sm:dark:text-primary-black;
+    @apply lg:text-primary-black lg:dark:text-white;
 }
 
 .navToggler {

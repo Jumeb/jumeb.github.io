@@ -1,7 +1,7 @@
 import React from "react";
 import { Icons } from "@/types/components";
 
-const Twitter: React.FC<Icons> = ({ className }) => {
+const CSSIcon: React.FC<Icons> = ({ className }) => {
   return (
     <svg
       stroke="currentColor"
@@ -13,10 +13,9 @@ const Twitter: React.FC<Icons> = ({ className }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+      <path d="M480 32l-64 368-223.3 80L0 400l19.6-94.8h82l-8 40.6L210 390.2l134.1-44.4 18.8-97.1H29.5l16-82h333.7l10.5-52.7H56.3l16.3-82H480z"></path>
     </svg>
   );
 };
 
-export default Twitter;
-
+export default CSSIcon;

@@ -7,6 +7,7 @@ const Button: React.FC<Button> = ({
   text,
   disabled,
   type = ButtonType.PRI,
+  onClick = () => {},
 }) => {
   let _typeVar: string[] = ["bg-primary", "text-primary-white"];
   switch (type) {
@@ -19,7 +20,13 @@ const Button: React.FC<Button> = ({
       break;
   }
   return (
-    <button className={[styles.button, disabled && styles.disabled, _typeVar[0]].join(" ")}>
+    <button
+      className={[styles.button, disabled && styles.disabled, _typeVar[0]].join(
+        " "
+      )}
+      onClick={onClick}
+      disabled={disabled}
+    >
       <span className={_typeVar[1]}>{text}</span>
     </button>
   );

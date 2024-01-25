@@ -1,0 +1,17 @@
+.inputContainer {
+    @apply relative w-full p-0 border border-primary;;
+}
+
+.inputContainer > label {
+    @apply absolute bg-white p-0.5 text-[11px] text-primary-black px-2 -mt-2.5 ml-2;
+}
+
+.inputContainer > input,
+.inputContainer > textarea {
+    @apply text-primary-black text-base p-3 w-full bg-transparent;
+}
+
+.inputContainer > input::placeholder,
+.inputContainer > input::-moz-placeholder {
+    @apply text-gray-light text-base font-normal;
+}

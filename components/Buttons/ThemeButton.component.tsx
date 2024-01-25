@@ -1,30 +1,50 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useTheme } from "next-themes";
 
 import styles from "./button.module.css";
 import DarkIcon from "../Icons/DarkIcon";
 import LightIcon from "../Icons/LightIcon";
 
 const ThemeButton: React.FC = () => {
-  const [active, setActive] = useState<boolean>(false);
+  const [light, setLight] = useState<boolean>(true);
+  const { theme, setTheme } = useTheme();
   const handleSwitch = () => {
-    setActive(!active);
+    if (light) {
+      setLight(false);
+      setTheme("dark");
+    }
+    if (!light) {
+      setLight(true);
+      setTheme("light");
+    }
   };
+
+  useEffect(() => {
+    if (theme === "dark") {
+      setLight(false);
+      setTheme("dark");
+    }
+    if (theme === "light") {
+      setLight(true);
+      setTheme("light");
+    }
+  }, [theme, setTheme]);
   return (
     <div
       className={[
         styles.themeButton,
-        active ? styles.active : styles.inactive,
+        light ? styles.active : styles.inactive,
       ].join(" ")}
       onClick={() => handleSwitch()}
     >
       <div
         className={[
           styles.themeSwitch,
-          active ? styles.activeSwitch : styles.inactiveSwitch,
+          light ? styles.activeSwitch : styles.inactiveSwitch,
         ].join(" ")}
       />
-      <DarkIcon className={[styles.themeIcon, '!fill-white'].join(" ")} />
-      <LightIcon className={[styles.themeIcon].join(" ")} />
+      <LightIcon className={[styles.themeIcon, "!fill-white"].join(" ")} />
+      <DarkIcon className={[styles.themeIcon].join(" ")} />
     </div>
   );
 };

@@ -11,7 +11,7 @@ import Twitter from "@/components/Icons/Twitter";
 import Button from "@/components/Buttons/Button.component";
 
 const Header: React.FC = () => {
-  const random = UseRandomRange(5);
+  const random = UseRandomRange(6);
   const images = [
     Assets.img1,
     Assets.img2,
@@ -19,23 +19,30 @@ const Header: React.FC = () => {
     Assets.img4,
     Assets.img5,
     Assets.img6,
+    Assets.img7,
   ];
   return (
     <section id="header" className={styles.header}>
       <div className={styles.headerLeft}>
-        <div className={styles.imageContainer}>
+        <div className={[styles.imageContainer, "dark:bg-primary-black"].join(" ")}>
           <div className={styles.imageBorder}>
             <img src={images[random]} alt="Jume's image" loading="lazy" />
           </div>
         </div>
       </div>
-      <div className={styles.headerRight}>
+      <div className={[styles.headerRight, "dark:bg-primary-black"].join(" ")}>
         <div className={styles.rightContent}>
-          <h2>Jume Brice</h2>
-          <p>Web Developer | Mobile App Developer</p>
-          <div className={styles.rightButton}>
+          <h2 className="dark:!text-white">Jume Brice</h2>
+          <p className="dark:!text-white">Web Developer | Mobile App Developer</p>
+          <a
+            href={Assets.cv}
+            className={styles.rightButton}
+            download="Jume's CV"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button text="Download CV" />
-          </div>
+          </a>
         </div>
         <div className={styles.socialLinks}>
           <SocialLinks to="https://www.linkedin.com/in/jume-njah/">

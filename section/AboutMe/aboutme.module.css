@@ -1,0 +1,123 @@
+.container {
+    @apply flex flex-col bg-white px-0 py-6 gap-10 w-full justify-center items-center;
+    @apply lg:py-8 lg:gap-14;
+    @apply xl:px-16 xl:py-16;
+}
+
+.containerTop {
+    @apply text-center;
+}
+
+.containerTop > h3 {
+    @apply text-center font-semibold text-balance px-4 text-primary-black text-2xl;
+    @apply lg:text-3xl lg:px-8;
+}
+
+.containerBottom {
+    @apply w-full flex flex-col justify-center items-center;
+    @apply lg:flex-row;
+}
+
+.bottomLeft {
+    @apply flex justify-center items-center w-full;
+    @apply lg:w-1/2;
+}
+
+.imageContainer {
+    @apply z-20 flex justify-center items-center h-72 aspect-square rounded-full border-[10px] border-primary overflow-clip bg-white;
+    @apply lg:h-[22rem];
+}
+
+.imageBorder {
+    @apply h-52 aspect-square rounded-full overflow-clip border-[14px] border-primary;
+    @apply lg:h-60;
+}
+
+.imageBorder > img {
+    @apply h-full w-full object-top object-cover;
+}
+
+.bottomRight {
+    @apply flex justify-start items-start w-full flex-col gap-14 px-4 py-10;
+    @apply md:px-8;
+    @apply lg:w-1/2 lg:px-0;
+}
+
+.aboutContent,
+.aboutSkills {
+    @apply flex flex-col gap-3;
+}
+
+.aboutContent > h4 {
+    @apply text-2xl font-semibold text-primary-black;
+}
+
+.aboutContent > h6 {
+    @apply text-base font-semibold text-primary-black;
+}
+
+.aboutContent > p {
+    @apply text-sm text-gray font-normal;
+    @apply xl:pr-52;
+}
+
+
+.aboutSkills > h6 {
+    @apply font-semibold text-primary-black text-sm;
+}
+
+.skillIcons {
+    @apply grid grid-cols-6 gap-4;
+}
+
+.skillIcon {
+    @apply h-7 w-7;
+}
+
+.html {
+    @apply fill-[#e34c26];
+}
+
+.css {
+    @apply fill-[#264de4];
+}
+
+.js {
+    @apply fill-[#f0db4f];
+}
+
+.ts {
+    @apply fill-[#007acc];
+}
+
+.sass {
+    @apply fill-[#cc6699];
+}
+
+.github {
+    @apply fill-[#171515];
+}
+
+.redux {
+    @apply fill-[#00a7e5];
+}
+
+.tailwind {
+    @apply fill-[#36b6f2];
+}
+
+.react {
+    @apply fill-[#22272d];
+}
+
+.nextjs {
+    @apply fill-[#212529];
+}
+
+.mongod {
+    @apply fill-[#3fa037];
+}
+
+.nodejs {
+    @apply fill-[#303030];
+}

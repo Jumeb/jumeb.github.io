@@ -3,9 +3,11 @@ import React, { useEffect, useState } from "react";
 import styles from "./testimonial.module.css";
 import TestimonialCard from "@/components/Cards/TestimonialCard.component";
 import Button from "@/components/Buttons/Button.component";
+import { useRouter } from "next/navigation";
 
 const Testimonial: React.FC = () => {
   const [active, setActive] = useState<number>(0);
+  const router = useRouter();
   useEffect(() => {
     let timeInterval = setTimeout(() => {
       if (active < 4) return setActive(active + 1);
@@ -18,9 +20,12 @@ const Testimonial: React.FC = () => {
   }, [active]);
 
   return (
-    <section id="testimonial" className={styles.container}>
+    <section
+      id="testimonial"
+      className={[styles.container, "dark:bg-primary-black"].join(" ")}
+    >
       <div className={styles.containerTop}>
-        <h3>What they say about me?</h3>
+        <h3 className="dark:text-white">What they say about me?</h3>
       </div>
       <div className={styles.containerBottom}>
         <div className={styles.testyContainer}>
@@ -55,11 +60,14 @@ const Testimonial: React.FC = () => {
         </div>
       </div>
       <div className={styles.lastContainer}>
-        <h2>
+        <h2 className="dark:text-white">
           Let&apos;s talk <br /> About Your project
         </h2>
         <div>
-          <Button text="Contact Me" />
+          <Button
+            text="Contact Me"
+            onClick={() => router.push("/contact-me")}
+          />
         </div>
       </div>
     </section>

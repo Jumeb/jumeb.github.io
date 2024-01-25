@@ -11,6 +11,7 @@ export interface Button {
     text: string;
     disabled?: boolean;
     type?: ButtonType;
+    onClick?: () => void;
 }
 
 export enum ButtonType {
@@ -46,4 +47,21 @@ export interface ServiceCard {
     title:string;
     description: string;
     icon: JSX.Element;
+}
+
+export interface MyworkCard {
+    img: string;
+    title: string;
+    type: string;
+    link: string;
+    badges: string[];
+}
+
+
+// Input interfaces 
+
+export interface Input {
+    label: string;
+    placeholder: string;
+    type?: string;
 }

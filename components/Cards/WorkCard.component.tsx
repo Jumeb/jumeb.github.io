@@ -2,26 +2,33 @@
 import React from "react";
 
 import styles from "./card.module.css";
-import { Assets } from "@/utils/static/assets";
 import Link from "next/link";
 import ArrowCircleIcon from "../Icons/ArrowCircleIcon";
+import { MyworkCard } from "@/types/components";
 
-const WorkCard: React.FC = () => {
+const WorkCard: React.FC<{ work: MyworkCard }> = ({ work }) => {
   return (
-    <div className={styles.workCard}>
+    <div className={[styles.workCard, "dark:bg-primary-black"].join(" ")}>
       <div className={styles.workImage}>
-        <img src={Assets.img2} alt="Project name" loading="lazy" />
+        <img src={work.img} alt={work.title} loading="lazy" />
         <div className={styles.workImageBar}>
-          <div className={styles.workBadge}>
-            <p>Personal</p>
-          </div>
-          <Link href="/">
-            <ArrowCircleIcon className={styles.workLink} />
+          {work.badges.map((badge, index: number) => (
+            <div key={index} className={styles.workBadge}>
+              <p>{badge}</p>
+            </div>
+          ))}
+          <Link
+            href={work.link}
+            className={[styles.workLink, "dark:bg-primary-black"].join(" ")}
+          >
+            <ArrowCircleIcon
+              className={[styles.workIcon, "dark:fill-white"].join(" ")}
+            />
           </Link>
         </div>
       </div>
-      <h5>Project name</h5>
-      <p>project type</p>
+      <h5 className="dark:text-white">{work.title}</h5>
+      <p>{work.type}</p>
     </div>
   );
 };

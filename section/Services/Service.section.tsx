@@ -12,30 +12,27 @@ const Services: React.FC = () => {
   const services: ServiceCardProps[] = [
     {
       title: "Web development",
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, natus
-      in odio adipisci nulla velit quisquam iusto eligendi delectus, ab
-      accusantium quod blanditiis aliquid mollitia vel illo facere quae nobis.`,
-      icon: <FrontendIcon className={styles.serviceIcon} />,
+      description: `As a proficient web developer, I excel in utilizing available tools to achieve pixel-perfect implementation. With a meticulous approach and a deep understanding of design principles, I consistently deliver high-quality, visually appealing websites.`,
+      icon: <FrontendIcon className={[styles.serviceIcon, "dark:fill-white"].join(" ")} />,
     },
     {
       title: "Mobile app development",
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, natus
-        in odio adipisci nulla velit quisquam iusto eligendi delectus, ab
-        accusantium quod blanditiis aliquid mollitia vel illo facere quae nobis.`,
-      icon: <MobileIcon className={styles.serviceIcon} />,
+      description: `I excel as a mobile app developer by harnessing advanced tools and frameworks to craft exceptional user experiences. My meticulous approach to user interface design ensures high-quality, intuitive mobile applications that exceed expectations.`,
+      icon: <MobileIcon className={[styles.serviceIcon, "dark:fill-white"].join(" ")} />,
     },
     {
       title: "Backend development",
-      description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, natus
-        in odio adipisci nulla velit quisquam iusto eligendi delectus, ab
-        accusantium quod blanditiis aliquid mollitia vel illo facere quae nobis.`,
-      icon: <BackendIcon className={styles.serviceIcon} />,
+      description: `As a learning backend developer, I leverage available tools and frameworks to create well-structured API endpoints. My commitment to continuous learning and exploration enables me to deliver robust and efficient backend solutions.`,
+      icon: <BackendIcon className={[styles.serviceIcon, "dark:fill-white"].join(" ")} />,
     },
   ];
   return (
-    <section id="services" className={styles.container}>
+    <section
+      id="services"
+      className={[styles.container, "dark:bg-primary-black"].join(" ")}
+    >
       <div className={styles.containerTop}>
-        <h3>Services I offer</h3>
+        <h3 className="dark:text-white">Services I offer</h3>
       </div>
       <div className={styles.containerBottom}>
         <div className={styles.serviceContainer}>
