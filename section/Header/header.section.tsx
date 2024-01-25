@@ -41,7 +41,7 @@ const Header: React.FC = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <Button text="Download CV" disabled />
+            <Button text="Download CV" />
           </a>
         </div>
         <div className={styles.socialLinks}>
