@@ -58,10 +58,12 @@ const Aboutme: React.FC = () => {
               Web Developer | Mobile App Developer
             </h6>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
-              cumque et incidunt accusantium corporis in, animi nam consequuntur
-              ex perspiciatis? Voluptatem, unde. Voluptatum ea id ex. Labore
-              facere ullam sunt.
+              I am a skilled web and mobile app developer with a strong
+              understanding of programming languages, frameworks, and design
+              principles. My ability to create user-friendly interfaces,
+              optimize performance, and troubleshoot technical issues sets me
+              apart. My passion for innovation and continuous learning makes
+              me an asset to any development team.
             </p>
           </div>
           <div>
@@ -96,7 +98,11 @@ const Aboutme: React.FC = () => {
                 className={[styles.skillIcon, styles.tailwind].join(" ")}
               />
               <NextIcon
-                className={[styles.skillIcon, styles.nextjs, "dark:fill-white"].join(" ")}
+                className={[
+                  styles.skillIcon,
+                  styles.nextjs,
+                  "dark:fill-white",
+                ].join(" ")}
               />
               <MongoDB
                 className={[styles.skillIcon, styles.mongod].join(" ")}
