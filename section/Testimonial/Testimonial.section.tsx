@@ -18,17 +18,17 @@ const Testimonial: React.FC = () => {
       testimonial:
         "Working with Jume on the Mengu Medicals website is effortless, albeit costly. His swift web development skills ensure minimal design queries, allowing for a relaxed experience and prompt results. Jume's speed sets him apart.",
     },
-    {
-      img: Assets.test2,
-      name: "Issabel Ntoweh",
-      testimonial:
-        "I am fortunate to work with Jume, as he demonstrates a deep understanding of the challenges inherent in UI/UX design and consistently exhibits meticulous attention to detail. However, I find his quietness during meetings to be somewhat off-putting.",
-    },
+    // {
+    //   img: Assets.test2,
+    //   name: "Issabel Ntoweh",
+    //   testimonial:
+    //     "I am fortunate to work with Jume, as he demonstrates a deep understanding of the challenges inherent in UI/UX design and consistently exhibits meticulous attention to detail. However, I find his quietness during meetings to be somewhat off-putting.",
+    // },
     {
       img: Assets.test3,
       name: "Mafany Myles",
       testimonial:
-        "I am privileged working with Jume, it seems he understands the pain in the process of UI/UX design, he pays close attention to the design in great detail. I don't like him because he is too quite in meetings.",
+        "Brice is highly skilled, detail-oriented, and professional. His technical expertise, attention to detail, and excellent communication make him a valuable asset to any project. I cannot think of anyone better who will exceed expectations with a commendable work ethic.",
     },
   ];
 
@@ -41,7 +41,7 @@ const Testimonial: React.FC = () => {
     return () => {
       clearTimeout(timeInterval);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [active]);
 
   return (
