@@ -14,7 +14,7 @@
 }
 
 .containerBottom {
-    @apply grid grid-cols-1 justify-center items-center w-full gap-8 place-content-center place-items-center;
+    @apply grid grid-cols-1 max-w-[1920px] mx-auto justify-center items-center w-full gap-8 place-content-center place-items-center;
     @apply md:gap-8 md:grid-cols-2;
     @apply lg:gap-8 lg:grid-cols-3;
     @apply xl:gap-8 xl:grid-cols-4;
