@@ -18,8 +18,8 @@ const MyWorks: React.FC = () => {
       img: Assets.flavours,
       title: "Flavours",
       type: "Web development",
-      link: "https://flavours-web.vercel.app/",
-      badges: ["Personal"],
+      link: "https://www.flavoursapp.com/",
+      badges: ["Personal", "On going"],
     },
     {
       img: Assets.karla,
