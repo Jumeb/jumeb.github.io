@@ -24,7 +24,9 @@ const Header: React.FC = () => {
   return (
     <section id="header" className={styles.header}>
       <div className={styles.headerLeft}>
-        <div className={[styles.imageContainer, "dark:bg-primary-black"].join(" ")}>
+        <div
+          className={[styles.imageContainer, "dark:bg-primary-black"].join(" ")}
+        >
           <div className={styles.imageBorder}>
             <img src={images[random]} alt="Jume's image" loading="lazy" />
           </div>
@@ -33,7 +35,9 @@ const Header: React.FC = () => {
       <div className={[styles.headerRight, "dark:bg-primary-black"].join(" ")}>
         <div className={styles.rightContent}>
           <h2 className="dark:!text-white">Jume Brice</h2>
-          <p className="dark:!text-white">Web Developer | Mobile App Developer</p>
+          <p className="dark:!text-white">
+            Frontend Developer | Mobile App Developer
+          </p>
           <a
             href={Assets.cv}
             className={styles.rightButton}
