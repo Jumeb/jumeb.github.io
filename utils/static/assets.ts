@@ -17,4 +17,5 @@ export const Assets = {
     icon: "./images/icon.png",
     portfolio: "./images/portfolio.png",
     cv: "./images/cv.pdf",
+    ai_gelb: "./images/ai-gelb.png",
 }

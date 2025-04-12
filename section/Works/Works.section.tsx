@@ -22,11 +22,18 @@ const MyWorks: React.FC = () => {
       badges: ["Personal", "On going"],
     },
     {
+      img: Assets.ai_gelb,
+      title: "ai-gelb",
+      type: "Web development",
+      link: "https://staging.chat.ai-gelb.de/chat-bot/chat",
+      badges: ["Remote", "On-going"],
+    },
+    {
       img: Assets.karla,
       title: "Karla",
       type: "Web development",
       link: "https://hallokarla.de/",
-      badges: ["Employement work"],
+      badges: ["Remote"],
     },
     {
       img: Assets.mengu,
@@ -40,14 +47,14 @@ const MyWorks: React.FC = () => {
       title: "GasVisor",
       type: "Web & Mobile app development",
       link: "https://app.gasvisor.eu/",
-      badges: ["Employement work", "On going"],
+      badges: ["Remote"],
     },
     {
       img: Assets.ntopor,
       title: "Ntopor",
       type: "Web development",
       link: "https://ntopor-social.github.io/ntopor.github.io/",
-      badges: ["Startup", "On going"],
+      badges: ["Startup"],
     },
   ];
   return (
