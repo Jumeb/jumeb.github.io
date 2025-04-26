@@ -53,17 +53,17 @@ const Aboutme: React.FC = () => {
         </div>
         <div className={styles.bottomRight}>
           <div className={styles.aboutContent}>
-            <h4 className="dark:text-white">Jume Brice</h4>
+            <h4 className="dark:text-white">Jume Njah</h4>
             <h6 className="dark:text-white">
-              Web Developer | Mobile App Developer
+              Frontend Developer | Mobile App Developer
             </h6>
             <p>
               I am a skilled web and mobile app developer with a strong
               understanding of programming languages, frameworks, and design
               principles. My ability to create user-friendly interfaces,
               optimize performance, and troubleshoot technical issues sets me
-              apart. My passion for innovation and continuous learning makes
-              me an asset to any development team.
+              apart. My passion for innovation and continuous learning makes me
+              an asset to any development team.
             </p>
           </div>
           <div>

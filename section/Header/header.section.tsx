@@ -34,7 +34,7 @@ const Header: React.FC = () => {
       </div>
       <div className={[styles.headerRight, "dark:bg-primary-black"].join(" ")}>
         <div className={styles.rightContent}>
-          <h2 className="dark:!text-white">Jume Brice</h2>
+          <h2 className="dark:!text-white">Jume Njah</h2>
           <p className="dark:!text-white">
             Frontend Developer | Mobile App Developer
           </p>
